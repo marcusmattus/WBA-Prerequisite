@@ -1,32 +1,40 @@
-Getting started
-Install dependencies
 
+
+### Install Dependencies
+```bash
 yarn
 Required Files
 dev-wallet.json
 wba-wallet.json
-How to generate dev-wallet.json
-# genereate dev-wallet.json file
+How to Generate dev-wallet.json
+bash
+Copy code
+# Generate dev-wallet.json file
 yarn keygen
-How to generate wba-wallet.json
+How to Generate wba-wallet.json
 Rename env file
-
+bash
+Copy code
 mv .env.sample .env
-Inside your env, enter your secret key
-
+Inside your .env, enter your secret key
+env
+Copy code
 WBA_SECRET_KEY=<solana secret key>
-Run wba keygen script
-
-# generate wba-wallet-json.file from saved wallet secret key in .env
+Run the wba keygen script
+bash
+Copy code
+# Generate wba-wallet-json.file from saved wallet secret key in .env
 yarn wba-keygen
-You are now ready to run scripts
-
 Running Scripts
-# request test SOL from devnet
+Request test SOL from devnet
+bash
+Copy code
 yarn airdrop
-
-# transfer all remaining SOL balance from one address to another
+Transfer all remaining SOL balance from one address to another
+bash
+Copy code
 yarn transfer
-
-# execute WBA program to enroll and complete pre-req
+Execute WBA program to enroll and complete pre-req
+bash
+Copy code
 yarn enroll
